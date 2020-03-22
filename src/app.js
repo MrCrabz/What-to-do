@@ -5,7 +5,7 @@ var appRoot = document.getElementById('content');
 // Page Setup
 
 const app =  {
-  title: 'Robz',
+  title: 'Robzz',
   subtitle: 'Put your life in the hands of a computer.'
 };
 

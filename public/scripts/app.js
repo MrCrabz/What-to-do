@@ -13,7 +13,7 @@ var appRoot = document.getElementById('content');
 // Page Setup
 
 var app = {
-  title: 'Robz',
+  title: 'Robzz',
   subtitle: 'Put your life in the hands of a computer.'
 };
 
