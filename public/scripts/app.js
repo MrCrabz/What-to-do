@@ -13,7 +13,7 @@ var appRoot = document.getElementById('content');
 // Page Setup
 
 var app = {
-  title: 'Robzz',
+  title: 'Robz',
   subtitle: 'Put your life in the hands of a computer.'
 };
 
@@ -258,9 +258,6 @@ var OptionsPanel = function (_React$Component3) {
   }
 
   _createClass(OptionsPanel, [{
-    key: 'setRemoveItem',
-    value: function setRemoveItem() {}
-  }, {
     key: 'render',
     value: function render() {
       var _this4 = this;

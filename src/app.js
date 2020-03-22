@@ -5,7 +5,7 @@ var appRoot = document.getElementById('content');
 // Page Setup
 
 const app =  {
-  title: 'Robzz',
+  title: 'Robz',
   subtitle: 'Put your life in the hands of a computer.'
 };
 
@@ -184,11 +184,6 @@ class OptionsPanel extends React.Component{
       optionToRemove: ''
     };
   }
-
-  setRemoveItem(){
-
-  }
-
 
   render(){
 
