@@ -48,18 +48,20 @@ var IndecisionApp = function (_React$Component) {
     return _this;
   }
 
+  // componentDidMount(){
+  //
+  //   try{
+  //     const json = localStorage.getItem('options');
+  //     const options = JSON.parse(json);
+  //
+  //     this.setState({options: options});
+  //   } catch (e){
+  //
+  //   }
+  //
+  // }
+
   _createClass(IndecisionApp, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-
-      try {
-        var json = localStorage.getItem('options');
-        var options = JSON.parse(json);
-
-        this.setState({ options: options });
-      } catch (e) {}
-    }
-  }, {
     key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps, prevState) {
       if (prevState.options.length !== this.state.options.length) {
