@@ -114,23 +114,30 @@ class IndecisionApp extends React.Component{
   }
 
   render(){
+
+    var isThereOptions = false;
+
+    if(this.state.options.length > 0){
+      isThereOptions = true;
+    }
+
     return (
       <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column padding-zero">
         <Header title={app.title} subtitle={app.subtitle} />
           <main role="main" className="inner cover form-container">
             <TopPanel
-              hasOptions={this.state.options.length > 0}
+              hasOptions={isThereOptions}
               deleteAllOptions={this.deleteAllOptions}
               hasError={this.state.hasError}
               currentError={this.state.currentError}
             />
             <OptionsPanel
-              hasOptions={this.state.options.length > 0}
+              hasOptions={isThereOptions}
               options={this.state.options}
               removeOption={this.removeOption}
             />
             <ControlPanel
-              hasOptions={this.state.options.length > 0}
+              hasOptions={isThereOptions}
               optionsList={this.state.options}
               pickOption={this.pickOption}
               toggleResultbubble={this.toggleResultbubble}

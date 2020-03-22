@@ -134,6 +134,13 @@ var IndecisionApp = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+
+      var isThereOptions = false;
+
+      if (this.state.options.length > 0) {
+        isThereOptions = true;
+      }
+
       return React.createElement(
         'div',
         { className: 'cover-container d-flex w-100 h-100 p-3 mx-auto flex-column padding-zero' },
@@ -142,18 +149,18 @@ var IndecisionApp = function (_React$Component) {
           'main',
           { role: 'main', className: 'inner cover form-container' },
           React.createElement(TopPanel, {
-            hasOptions: this.state.options.length > 0,
+            hasOptions: isThereOptions,
             deleteAllOptions: this.deleteAllOptions,
             hasError: this.state.hasError,
             currentError: this.state.currentError
           }),
           React.createElement(OptionsPanel, {
-            hasOptions: this.state.options.length > 0,
+            hasOptions: isThereOptions,
             options: this.state.options,
             removeOption: this.removeOption
           }),
           React.createElement(ControlPanel, {
-            hasOptions: this.state.options.length > 0,
+            hasOptions: isThereOptions,
             optionsList: this.state.options,
             pickOption: this.pickOption,
             toggleResultbubble: this.toggleResultbubble,
