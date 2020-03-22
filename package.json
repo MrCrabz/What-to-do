@@ -1,0 +1,13 @@
+{
+  "name": "Indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Robin Geagea",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react-typical": "^0.1.3"
+  }
+}

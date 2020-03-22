@@ -1,0 +1,241 @@
+*{
+    transition: .7s;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body, html{
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  background-color: #232330;
+  color: white;
+  font-family: "Poppins";
+}
+
+.masthead-brand{
+  font-family: 'Major Mono Display', monospace;
+}
+
+.nav-masthead h4{
+  font-size: 11px;
+  font-family: 'Poppins', monospace;
+  margin-left: 2px;
+}
+
+.form-container{
+  margin: auto;
+  width: 400px;
+}
+
+.upper{
+  padding: 0px 20px;
+  transition: 0s;
+}
+
+.upper p{
+  line-height: 36px;
+}
+
+#resetButton{
+  background-color: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 10px;
+  color: #3f3d56;
+  border: 1px solid #3f3d56;
+  padding: 5px 20px;
+}
+
+#resetButton:hover, #resetButton:active, #resetButton:focus{
+  border: none;
+  background-color: #ff6584;
+  border: 1px solid #ff6584;
+  color: white;
+}
+
+.form-container, .form-container > *, .optionsContainer, .optionsContainer *{
+  transition: 0s;
+}
+
+.optionsContainer{
+  margin: 0px;
+  min-height: 175px;
+}
+
+.optionsContainer.empty{
+  transition: 0s;
+  background-position: center;
+  background-image: url(../visuals/undraw_road_sign_mfpo.svg);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+}
+
+.listOfOptions{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+}
+
+li.option {
+    padding: 10px;
+    text-align: left;
+    color: #3f3d56;
+    border-bottom: 1px solid #3f3d56;
+    position: relative;
+}
+
+.singleRemove{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  color: #3f3d56;
+  cursor: pointer !important;
+  line-height: 45px;
+  transition: .15s;
+}
+
+.singleRemove:hover{
+  color: white;
+}
+
+.optionForm input{
+  margin: 10px;
+  margin-left: 0px;
+  width: 300px;
+  background-color: #3f3d56;
+  border: none;
+  border-radius: 999px;
+  padding: 10px;
+  color: white;
+  padding-left: 15px;
+}
+
+.optionForm input::placeholder{
+  color: #5e5a80;
+  padding-left: 15px;
+}
+
+.optionForm button{
+  padding: 10px;
+  border-radius: 99999px;
+  border: none;
+  background-color: #3f3d56;
+  color: white;
+}
+
+.optionForm button:hover, .optionForm button:focus, .optionForm button:active{
+  background-color: #ff6584;
+}
+
+.robotShuffler{
+  margin-top: 30px;
+  font-size: 25px;
+  line-height: 20px;
+  background-color: transparent;
+  border-radius: 99999px;
+  padding: 10px;
+  border: none !important;
+  background-color: #3f3d56;
+  color: white;
+}
+.robotShuffler i{
+  font-size: 25px !important;
+  padding: 10px;
+}
+
+.robotShuffler:hover, .btn-primary.disabled, .btn-primary:disabled{
+  background-color: #ff6584;
+  color: white;
+  border: 1px solid #ff6584;
+}
+
+.resultMask{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(63, 61, 85, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.resultBox{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  background-color: #ff6584;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.resultBox .close{
+  text-align: right;
+}
+
+.resultBox .close button{
+  background-color: transparent;
+  font-family: arial !important;
+  margin-right: 10px;
+  margin-top: 15px;
+  border: none;
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+}
+
+.resultBox h3{
+  font-size: 17px;
+  margin-top: 100px;
+}
+
+.pickedAnswer{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.inner i{
+  margin: 5px;
+  font-size: 15px;
+}
+
+.inner .middle{
+  font-size: 9px;
+  line-height: 12px;
+  vertical-align: middle;
+}
+
+.inner .first{
+  color: #6c63ff;
+}
+
+.inner .last{
+  color: #ff6584;
+}
+
+/* Helper */
+
+.helper{
+  margin-top: 10px;
+}
+.helper p{
+  border: 1px solid #3f3d56;
+  color: #3f3d56;
+  padding: 15px 0px;
+  margin: 0px;
+}
+
+.helper.active p{
+  background-color: #3f3d56;
+  color: #232330;
+}
