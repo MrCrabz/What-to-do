@@ -115,7 +115,7 @@ class IndecisionApp extends React.Component{
 
   render(){
     return (
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column padding-zero">
         <Header title={app.title} subtitle={app.subtitle} />
           <main role="main" className="inner cover form-container">
             <TopPanel
@@ -174,7 +174,7 @@ class TopPanel extends React.Component{
     }
 
     return (
-      <div className="container upper">
+      <div className="container upper padding-zero">
         <div className="row">
           <div className="col-6 text-left">
             <p>Your Options</p>
@@ -257,7 +257,7 @@ class ControlPanel extends React.Component{
   render(){
 
     var form = (
-      <div className="container">
+      <div className="container padding-zero">
         <form className="optionForm" onSubmit={this.props.addOption}>
           <input type="text" name="option" placeholder="New Option"/>
           <button type="submit" className="btn btn-primary" id="addButton"> <i className="fas fa-plus"></i></button>

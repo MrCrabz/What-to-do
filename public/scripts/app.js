@@ -136,7 +136,7 @@ var IndecisionApp = function (_React$Component) {
     value: function render() {
       return React.createElement(
         'div',
-        { className: 'cover-container d-flex w-100 h-100 p-3 mx-auto flex-column' },
+        { className: 'cover-container d-flex w-100 h-100 p-3 mx-auto flex-column padding-zero' },
         React.createElement(Header, { title: app.title, subtitle: app.subtitle }),
         React.createElement(
           'main',
@@ -218,7 +218,7 @@ var TopPanel = function (_React$Component2) {
 
       return React.createElement(
         'div',
-        { className: 'container upper' },
+        { className: 'container upper padding-zero' },
         React.createElement(
           'div',
           { className: 'row' },
@@ -357,7 +357,7 @@ var ControlPanel = function (_React$Component5) {
 
       var form = React.createElement(
         'div',
-        { className: 'container' },
+        { className: 'container padding-zero' },
         React.createElement(
           'form',
           { className: 'optionForm', onSubmit: this.props.addOption },

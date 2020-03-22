@@ -30,7 +30,7 @@ body, html{
 
 .form-container{
   margin: auto;
-  width: 400px;
+  width: 300px;
 }
 
 .upper{
@@ -63,6 +63,10 @@ body, html{
   transition: 0s;
 }
 
+.form-container, .optionsContainer, .padding-zero{
+  padding: 0px !important;
+}
+
 .optionsContainer{
   margin: 0px;
   min-height: 175px;
@@ -80,7 +84,8 @@ body, html{
   list-style: none;
   margin: 0;
   padding: 0;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 li.option {
@@ -109,7 +114,7 @@ li.option {
 .optionForm input{
   margin: 10px;
   margin-left: 0px;
-  width: 300px;
+  width: 245px;
   background-color: #3f3d56;
   border: none;
   border-radius: 999px;
@@ -129,6 +134,8 @@ li.option {
   border: none;
   background-color: #3f3d56;
   color: white;
+  width: 45px;
+  height: 45px;
 }
 
 .optionForm button:hover, .optionForm button:focus, .optionForm button:active{
